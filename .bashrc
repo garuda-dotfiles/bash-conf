@@ -81,3 +81,11 @@ export JAVA_HOME=$HOME/lib/jdk/jdk-11.0.23+9
 export PATH=$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$JAVA_HOME/bin
 # Alias for dev mobile
 alias vd="emulator -avd REALME_GT_5G_34_API_34"
+
+# ssh keygen
+eval "$(ssh-agent -s)"
+# ssh-add ~/.ssh/github-ssh-keygen/id_ed25519
+
+# golang
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$(go env GOPATH)/bin
