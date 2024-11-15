@@ -86,6 +86,8 @@ alias vd="emulator -avd REALME_GT_5G_34_API_34"
 eval "$(ssh-agent -s)"
 # ssh-add ~/.ssh/github-ssh-keygen/id_ed25519
 
+# TODO: ssh-copy-id
+
 # golang
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$(go env GOPATH)/bin
