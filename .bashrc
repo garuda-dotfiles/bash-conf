@@ -68,6 +68,8 @@ alias cd="cd -P"
 alias vim="nvim -p"
 alias vd="nvim -dO"
 
+alias ll="eza -laBh --icons=always"
+
 printf "\e[5 q"
 fastfetch -l garuda
 
@@ -83,7 +85,7 @@ export PATH=$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$JAVA_HOME
 alias vd="emulator -avd REALME_GT_5G_34_API_34"
 
 # ssh keygen
-eval "$(ssh-agent -s)"
+eval "$(ssh-agent -s)" >/dev/null
 # ssh-add ~/.ssh/github-ssh-keygen/id_ed25519
 
 # TODO: ssh-copy-id
