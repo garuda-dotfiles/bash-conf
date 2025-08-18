@@ -68,7 +68,7 @@ alias cd="cd -P"
 alias vim="nvim -p"
 alias vd="nvim -dO"
 
-alias ll="eza -lah --icons=always --git-repos --git -T -L 1"
+alias ll="eza -lah --icons=always --git-repos --git -T -L 2"
 
 printf "\e[5 q"
 fastfetch -l garuda
