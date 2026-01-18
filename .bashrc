@@ -84,9 +84,10 @@ export PATH=$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$JAVA_HOME
 # Alias for dev mobile
 alias vd="emulator -avd REALME_GT_5G_34_API_34"
 
-# ssh keygen
-eval "$(ssh-agent -s)" >/dev/null
-# ssh-add ~/.ssh/github-ssh-keygen/id_ed25519
+if ! pgrep -u "$USER" ssh-agent >/dev/null; then
+  eval "$(ssh-agent -s)" >/dev/null
+  ssh-add ~/.ssh/git/id_github 2>/dev/null
+fi
 
 # TODO: ssh-copy-id
 
