@@ -94,3 +94,6 @@ fi
 # golang
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$(go env GOPATH)/bin
+
+# Rust
+export PATH="$HOME/.cargo/bin:$PATH"
